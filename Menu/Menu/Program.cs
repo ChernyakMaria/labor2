@@ -6,8 +6,8 @@ namespace Menu
 		static void Main(string[] args)
 		{
 			double a, b;
-			Console.WriteLine("Введите А: ");
-			a = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Введите B: ");
+			b = Convert.ToDouble(Console.ReadLine());
 
 		}
 	}
