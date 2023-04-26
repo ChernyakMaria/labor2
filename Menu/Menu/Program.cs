@@ -5,7 +5,9 @@ namespace Menu
 	{
 		static void Main(string[] args)
 		{
-			double a, b;
+			double a;
+			double b;
+			double total;
 			Console.WriteLine("Введите А: ");
 			a = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine("Введите B: ");
@@ -20,30 +22,6 @@ namespace Menu
 			switch (znak)
 			{
 
-				case '+':
-					Console.WriteLine("Результат:", a + b);
-					break;
-
-
-				case '-':
-					Console.WriteLine("Результат:", a - b);
-
-					break;
-
-				case '*':
-					Console.WriteLine("Результат: ", a * b);
-					break;
-
-				case '/':
-					if (a != 0 || b != 0)
-					{
-						Console.WriteLine("Результат: ", (float)a / b);
-					}
-					else if (a == 0 || b == 0)
-					{
-						Console.WriteLine("На ноль делить нельзя.");
-					}
-					break;
 
 			}
 
