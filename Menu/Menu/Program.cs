@@ -13,6 +13,7 @@ namespace Menu
 			Console.WriteLine("(+)");
 			Console.WriteLine("(-)");
 			Console.WriteLine("(*)");
+			Console.WriteLine("(/)");
 			znak = Convert.ToChar(Console.ReadLine());
 		switch (znak)
 			{
@@ -30,6 +31,18 @@ namespace Menu
 				case '*':
 					Console.WriteLine("Результат: ", a * b);
 					break;
+
+				case '/':
+					if (a != 0 || b != 0)
+					{
+						Console.WriteLine("Результат: ", (float)a / b);
+					}
+					else if (a == 0 || b == 0)
+					{
+						Console.WriteLine("На ноль делить нельзя.");
+					}
+					break;
+
 			}
 
 		}
