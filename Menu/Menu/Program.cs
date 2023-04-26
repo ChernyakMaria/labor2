@@ -5,6 +5,7 @@ namespace Menu
 	{
 		static void Main(string[] args)
 		{
+		
 			double a;
 			Console.WriteLine("Введите А: ");
 			a = Convert.ToDouble(Console.ReadLine());
@@ -18,6 +19,7 @@ namespace Menu
 			Console.WriteLine("(*)");
 			Console.WriteLine("(/)");
 			znak = Convert.ToChar(Console.ReadLine());
+			double total;
 			switch (znak)
 			{
 				case '+':
@@ -45,7 +47,6 @@ namespace Menu
 						Console.WriteLine("На ноль делить нельзя.");
 					}
 					break;
-
 
 			}
 
