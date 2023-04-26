@@ -16,6 +16,7 @@ namespace Menu
 			Console.WriteLine("(+)");
 			Console.WriteLine("(-)");
 			Console.WriteLine("(*)");
+			Console.WriteLine("(/)");
 			znak = Convert.ToChar(Console.ReadLine());
 			switch (znak)
 			{
@@ -33,6 +34,18 @@ namespace Menu
 					total = a * b;
 					Console.WriteLine("Результат:" + total);
 					break;
+
+				case '/':
+
+					total = (float)a / b;
+					Console.WriteLine("Результат: " + total);
+
+					if (b == 0)
+					{
+						Console.WriteLine("На ноль делить нельзя.");
+					}
+					break;
+
 
 			}
 
