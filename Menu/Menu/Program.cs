@@ -12,6 +12,7 @@ namespace Menu
 			Console.WriteLine("Введите знак для реализации операции:");
 			Console.WriteLine("(+)");
 			Console.WriteLine("(-)");
+			Console.WriteLine("(*)");
 			znak = Convert.ToChar(Console.ReadLine());
 		switch (znak)
 			{
@@ -26,12 +27,12 @@ namespace Menu
 
 					break;
 
+				case '*':
+					Console.WriteLine("Результат: ", a * b);
+					break;
 			}
 
 		}
 	}
-
-			
-	
 
 }
