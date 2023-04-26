@@ -3,11 +3,11 @@ namespace Menu
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+		static void Main(string[] args)
+		{
 			double a, b;
 			Console.WriteLine("Введите А: ");
-			 a = Convert.ToDouble(Console.ReadLine());
+			a = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine("Введите В: ");
 			b = Convert.ToDouble(Console.ReadLine());
 			char znak;
@@ -17,6 +17,13 @@ namespace Menu
 			Console.WriteLine("(*)");
 			Console.WriteLine("(/)");
 			znak = Convert.ToChar(Console.ReadLine());
-		}
-    }
+
+			switch (znak)
+			{
+
+				default:
+					Console.WriteLine("Ошибка! Неизвестная математическая операция. ");
+					break;
+			}
+	}	}
 }
